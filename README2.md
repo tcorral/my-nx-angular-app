@@ -5,7 +5,7 @@ With `colima` and `act` to work in Macbook with Silicon chips:
     - Execute `DOCKER_HOST=unix://$HOME/.colima/docker.sock act --container-architecture linux/amd64`
     - All workflows should have a different name for the whole pipeline to work.
 - To run a specific workflow use push -W '.github/workflows/test.yml'
-    - Execute `DOCKER_HOST=unix://$HOME/.colima/docker.sock act --container-architecture linux/amd64 push -W 'path/to/workflow.yml`
+    - Execute `DOCKER_HOST=unix://$HOME/.colima/docker.sock act --container-architecture linux/amd64 push -W '.github/workflows/<WORKFLOW>.yml' -s GITHUB_TOKEN=<GITHUB_TOKEN_VALUE>`
 
 ## Events triggering workflows
 
